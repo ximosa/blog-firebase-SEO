@@ -1,12 +1,6 @@
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBI8P_Aqp4R2TpGU8GsZnd7Y-r-TcPCpKc",
-  authDomain: "notas-d6da8.firebaseapp.com",
-  databaseURL: "https://notas-d6da8.firebaseio.com",
-  projectId: "notas-d6da8",
-  storageBucket: "notas-d6da8.appspot.com",
-  messagingSenderId: "691192984776",
-  appId: "1:691192984776:web:4f4ea174f050b411a0a1fd"
+ TUS CREDENCIALES DE FIREBASE
 };
 
 
