@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Post</title>
+<meta name="description" content="Un blog sobre tecnología, viajes y experiencias personales. Comparte tus ideas, conecta con otros y haz que tu voz se escuche.">
+  <meta name="keywords" content="blog, tecnología, viajes, experiencias, comunidad">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://cdn.tiny.cloud/1/3usygobdfx9bftjb5lcoifohnglr1mqy8q67y1k5z5usgcvi/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Webgae</div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#" id="loginBtn">Iniciar sesión</a></li>
+                <li><a href="crear-post.html" id="crearPostBtn" style="display: none;">Crear Post</a></li>
+                <li><a href="mis-post.html" id="misPostBtn" style="display: none;">Mis Posts</a></li>
+                <li><a href="#" id="logoutBtn" style="display: none;">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Crear Nuevo Post</h1>
+        <form id="post-form">
+            <label for="post-title">Título:</label>
+            <input type="text" id="post-title" required>
+            <label for="post-content">Contenido:</label>
+            <textarea id="post-content"></textarea>
+            <button type="submit">Publicar</button>
+        </form>
+    </main>
+ <footer>
+        <p>&copy; 2023 Webgae. Todos los derechos reservados.</p>
+    </footer>
+    <script src="app.js"></script>
+    <script src="crear-post.js"></script>
+</body>
+</html>

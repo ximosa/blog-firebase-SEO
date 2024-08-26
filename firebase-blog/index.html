@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webgae</title>
+<meta name="description" content="Un blog sobre tecnología, viajes y experiencias personales. Comparte tus ideas, conecta con otros y haz que tu voz se escuche.">
+  <meta name="keywords" content="blog, tecnología, viajes, experiencias, comunidad">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Webgae</div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li><a href="#" id="loginBtn">Iniciar sesión</a></li>
+                <li><a href="crear-post.html" id="crearPostBtn" style="display: none;">Crear Post</a></li>
+                <li><a href="mis-post.html" id="misPostBtn" style="display: none;">Mis Posts</a></li>
+                <li><a href="#" id="logoutBtn" style="display: none;">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+<div id="entrada">
+ <div class="hero">
+        <div class="hero-content">
+            <h1>Comparte tus ideas con el mundo</h1>
+            <p>Crea artículos, conéctate con otros y haz que tu voz se escuche.</p>
+            <a href="#ver-post" class="call-to-action">Explorar el Blog</a>
+        </div>
+        <div class="hero-image">
+<img src="https://blogger.googleusercontent.com/img/a/AVvXsEjKDojsvMG3HtzUY5ozEyfTdUGhdWO3zLCk4U7siwD1I2XCHExIlPwnUksxc4kNA7Iah_0ExfKYOLc-zcizYe4t9emHykr3mp6NkeM_MAegAJ0_Pwuf6MbJD9atyGWBWMP1cXdrPmMDwb2rVglMpS5SCFohNI8PZRVv_yZKT2nmFDkn5y2L_RsJN4_QiQ" alt="Escribir en el blog">
+           
+        </div>
+    </div>
+
+    <section class="beneficios">
+        <h2>¿Por qué usar Webgae?</h2>
+        <div class="beneficios-container">
+            <div class="beneficio">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgs204hazU_fY3SW2GlF5aNxZKKHQ1nZMiIU1FxYfqjPLKAnRiTmWR3JOfpgL9h-LIkpDdh2JEJ2FmMpqPzk7MxL_ISz0yp1-0fNkksJoBwTWSfT7RIyoXkQbsxxjhXHk8qPPtp6HTkDzm6q7t5mvH_DzsqsVPFn9MSyYu9EvFqJpjUIcLiWtZDmVLcpw" alt="Icono de facilidad de uso">
+                <h3>Fácil de usar</h3>
+                <p>Publica tus ideas en minutos con nuestra interfaz intuitiva.</p>
+            </div>
+            <div class="beneficio">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjIHeqMME8zi3qi_Zej5u6WNwKaenritkFNwtc4dYkKO9hvgHD6rCGj1OMboIEfw9mhJ7COuRWR3MxoHqnh1Y5FUOc7CCZnD2T5cr2osqLX_PXe6jU9ThePG92lfCOkFw6SL1LUr_csUAde8_wuCuxFnBPXlvM3fp4GhyVe1mu7erfWck3TFknY7fOVkg" alt="Icono de comunidad">
+                <h3>Conecta con otros</h3>
+                <p>Únete a una comunidad de escritores y comparte tus pasiones.</p>
+            </div>
+            <div class="beneficio">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgwgUin2jaNBplJ0LIBUIX1VNCoYXFCHP63FWlP8Y1VGrkaAl-klj-mpkRyObz08s5h0es9CENYjopbOBu6kcf4bAgFofQi_GnO4-zpyUWosaV9qc1tszHC_cEfchjv_b5MaIe07NP2WPA2QcpsAevqLkXnj8FqtOoZFCnYy_AsuDcEnjqbupyLsjxV6Q" alt="Icono de amplificar la voz">
+                <h3>Haz que tu voz se escuche</h3>
+                <p>Llega a una audiencia más amplia y comparte tu conocimiento.</p>
+            </div>
+        </div>
+    </section>
+</div>
+    <main id="ver-post">
+        <h1>Últimos Posts</h1>
+        <div id="posts-container"></div>
+        <div id="pagination">
+            <button id="prevBtn">Anterior</button>
+            <button id="nextBtn">Siguiente</button>
+        </div>
+    </main>
+ <footer>
+        <p>&copy; 2023 Webgae. Todos los derechos reservados.</p>
+    </footer>
+    <script src="app.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
