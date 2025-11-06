@@ -1,2 +1,2 @@
-el articulo de este recurso esta en
-https://www.webgae.com/2024/08/firebase-blog-tu-blog-personal-sencillo.html
+El articulo de este recurso esta en, entra en el blog y buscalo.
+https://www.webgae.com/
